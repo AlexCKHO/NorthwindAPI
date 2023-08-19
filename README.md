@@ -95,6 +95,35 @@ The **Northwind API** is an ASP.NET Core Web API project designed to provide CRU
 4. Run dotnet run to start the API.
 5. Use tools like Postman or Swagger (if configured) to interact with the available endpoints.
 
+## Testing 
+
+The **Northwind API** testing suite is designed to validate the application's core functionalities. Through rigorous unit tests, the project validates crucial components of the application, from the data access layer to the controllers, ensuring that they operate consistently and helping to identify potential issues.
+
+## Test Project Overview
+
+### Dependencies
+
+- **Microsoft.EntityFrameworkCore.InMemory**: For simulating database operations in-memory.
+- **Moq**: Utilized for creating mock objects in unit tests.
+- **NUnit**: The primary framework for crafting unit tests.
+
+
+### Test Classes & Scenarios
+
+1. **RepositoryTests**: Concentrates on the repository layer, validating the behavior of data CRUD operations.
+   
+2. **SuppliersControllerShould**: Evaluates the `SuppliersController`, ensuring that its endpoints return the expected outcomes.
+
+3. **SupplierServiceShould**: Ensures the service layer's operations, focusing on data retrieval and manipulation.
+
+
+## Running the Tests
+
+1. Navigate to the directory containing the test project.
+2. Execute the command `dotnet test` to initiate all tests.
+3. Examine the console output to identify any failing tests and their associated error messages.
+
+
 ## Future Enhancements
 * Implement authentication and authorization.
 * Extend the API to cover more entities from the Northwind database.
