@@ -95,11 +95,9 @@ The **Northwind API** is an ASP.NET Core Web API project designed to provide CRU
 4. Run dotnet run to start the API.
 5. Use tools like Postman or Swagger (if configured) to interact with the available endpoints.
 
-## Testing 
+## Testing Overview 
 
 The **Northwind API** testing suite is designed to validate the application's core functionalities. Through rigorous unit tests, the project validates crucial components of the application, from the data access layer to the controllers, ensuring that they operate consistently and helping to identify potential issues.
-
-## Test Project Overview
 
 ### Dependencies
 
